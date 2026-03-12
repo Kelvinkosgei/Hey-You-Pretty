@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hey Faith.</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Poppins:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/jpeg" href="images/logo-2.jpg" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="bg-glow" aria-hidden="true"></div>
+    <div class="bg-photos" aria-hidden="true">
+      <span class="bg-photo photo-one"></span>
+      <span class="bg-photo photo-two"></span>
+      <span class="bg-photo photo-three"></span>
+      <span class="bg-photo photo-four"></span>
+    </div>
+    <div id="floating-girls" class="floating-girls" aria-hidden="true"></div>
+    <div class="sparkle-layer" aria-hidden="true"></div>
+    <div class="film-grain" aria-hidden="true"></div>
+    <div class="vignette" aria-hidden="true"></div>
+
+    <button id="music-toggle" class="music-toggle" aria-pressed="false">
+      Play music
+    </button>
+    <audio id="bg-music" src="images/music.mp3" loop preload="none"></audio>
+
+    <div id="chat-widget" class="chat-widget" aria-live="polite">
+      <div class="chat-header">
+        <div>
+          <p class="chat-title">Tiny AI</p>
+          <p class="chat-subtitle">A polite romantic bot</p>
+        </div>
+        <button id="chat-toggle" class="chat-toggle" aria-label="Toggle chat">
+          _
+        </button>
+      </div>
+      <div id="chat-messages" class="chat-messages">
+        <div class="chat-message bot">
+          Hi there... so you found the secret conversation button.
+        </div>
+      </div>
+      <div class="chat-options">
+        <button class="chat-option" data-key="why">Why did you make this?</button>
+        <button class="chat-option" data-key="think">What do you think about me?</button>
+        <button class="chat-option" data-key="date">Is this a date invitation?</button>
+      </div>
+    </div>
+
+    <header class="hero" id="top">
+      <div class="hero-photo" aria-hidden="true"></div>
+      <div class="hero-overlay" aria-hidden="true"></div>
+      <div id="hero-hearts" class="hearts-layer" aria-hidden="true"></div>
+      <div class="hero-content">
+        <p class="hero-kicker">A small website with a big crush</p>
+        <h1>Hey <span>Faith</span> ??</h1>
+        <p class="hero-subtitle">
+          I built this tiny corner of the internet just for you.
+        </p>
+        <button id="hero-cta" class="btn primary pulse">
+          Okay... what is this about?
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <section id="story" class="section reveal">
+        <div class="section-inner">
+          <h2>So here's the thing...</h2>
+          <p
+            id="typing-text"
+            class="typing"
+            data-text="I could send you a text. Or a voice note. But I figured... why not build you a small website instead? Slightly extra? Maybe. Worth it? Definitely."
+          ></p>
+        </div>
+      </section>
+
+      <section id="admissions" class="section reveal">
+        <div class="section-inner">
+          <h2>A few things I should probably admit...</h2>
+          <div class="cards-grid">
+            <article class="reveal-card tilt" tabindex="0">
+              <div class="card-top">
+                <h3>What I like about you</h3>
+                <span class="card-hint">Tap to open</span>
+              </div>
+              <p class="card-body">
+                Your smile... dangerously effective. Your vibe... calm but chaotic in
+                the best way.
+              </p>
+            </article>
+            <article class="reveal-card tilt" tabindex="0">
+              <div class="card-top">
+                <h3>Random thought</h3>
+                <span class="card-hint">Tap to open</span>
+              </div>
+              <p class="card-body">
+                Talking to you somehow makes normal days feel like a good movie
+                scene.
+              </p>
+            </article>
+            <article class="reveal-card tilt" tabindex="0">
+              <div class="card-top">
+                <h3>Small confession</h3>
+                <span class="card-hint">Tap to open</span>
+              </div>
+              <p class="card-body">I might have a little crush on you.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="gallery" class="section reveal">
+        <div class="section-inner">
+          <h2>Romantic snapshots</h2>
+          <div class="gallery-grid">
+            <figure class="gallery-item tilt">
+              <img
+                src="images/couples.png"
+                alt="Couple walking under city lights"
+              />
+            </figure>
+            <figure class="gallery-item tilt">
+              <img
+                src="images/sunset.png"
+                alt="Holding hands during sunset"
+              />
+            </figure>
+            <figure class="gallery-item tilt">
+              <img
+                src="images/sillhoutes.png"
+                alt="Silhouettes during golden hour"
+              />
+            </figure>
+            <figure class="gallery-item tilt">
+              <img
+                src="images/coffee-date.png"
+                alt="Cozy coffee date"
+              />
+            </figure>
+          </div>
+          <p class="gallery-caption">
+            Maybe one day we'll recreate moments like these.
+          </p>
+        </div>
+      </section>
+
+      <section id="memories" class="section reveal">
+        <div class="section-inner">
+          <h2>Little moments I'd frame</h2>
+          <p class="section-intro">
+            Tiny scenes I can already picture with you in them.
+          </p>
+          <div class="polaroid-strip">
+            <figure class="polaroid tilt">
+              <img src="images/sunset.png" alt="Sunset glow" />
+              <figcaption>Golden hour talks</figcaption>
+            </figure>
+            <figure class="polaroid tilt">
+              <img src="images/coffee-date.png" alt="Coffee date" />
+              <figcaption>That first coffee laugh</figcaption>
+            </figure>
+            <figure class="polaroid tilt">
+              <img src="images/couples.png" alt="City lights walk" />
+              <figcaption>City lights stroll</figcaption>
+            </figure>
+            <figure class="polaroid tilt">
+              <img src="images/sillhoutes.png" alt="Silhouette at dusk" />
+              <figcaption>Quiet, just us</figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <section id="timeline" class="section reveal">
+        <div class="section-inner">
+          <h2>Mini love timeline</h2>
+          <div class="timeline">
+            <div class="timeline-item">
+              <span class="timeline-dot"></span>
+              <div class="timeline-content">
+                <h3>First hello</h3>
+                <p>The moment the story quietly started.</p>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <span class="timeline-dot"></span>
+              <div class="timeline-content">
+                <h3>Favorite vibe</h3>
+                <p>Every conversation feels effortless and cinematic.</p>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <span class="timeline-dot"></span>
+              <div class="timeline-content">
+                <h3>Next chapter</h3>
+                <p>Something sweet, simple, and ours to choose.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="question" class="section reveal">
+        <div class="section-inner center">
+          <h2>So here's my important question...</h2>
+          <button id="curious-btn" class="btn secondary">
+            Click if you're curious
+          </button>
+          <div id="question-area" class="question-area pulse" aria-live="polite">
+            <p class="question-text">
+              Would you go on a small adventure with me sometime?
+            </p>
+            <div class="question-actions">
+              <button id="yes-btn" class="btn primary">Yes obviously ??</button>
+              <button id="convince-btn" class="btn ghost">Convince me</button>
+            </div>
+            <p id="answer-message" class="answer-message"></p>
+          </div>
+          <div id="confetti" class="confetti" aria-hidden="true"></div>
+        </div>
+      </section>
+
+      <section id="compatibility" class="section reveal">
+        <div class="section-inner">
+          <h2>Quick compatibility test</h2>
+          <p class="section-intro">
+            Three questions. No pressure. Just vibes.
+          </p>
+          <div class="quiz-grid">
+            <article class="quiz-card tilt" data-question="0">
+              <h3>Coffee date or sunset walk?</h3>
+              <div class="quiz-options">
+                <button class="quiz-option">Coffee date</button>
+                <button class="quiz-option">Sunset walk</button>
+              </div>
+            </article>
+            <article class="quiz-card tilt" data-question="1">
+              <h3>Late night calls or early morning adventures?</h3>
+              <div class="quiz-options">
+                <button class="quiz-option">Late night calls</button>
+                <button class="quiz-option">Early morning adventures</button>
+              </div>
+            </article>
+            <article class="quiz-card tilt" data-question="2">
+              <h3>Movies or road trips?</h3>
+              <div class="quiz-options">
+                <button class="quiz-option">Movies</button>
+                <button class="quiz-option">Road trips</button>
+              </div>
+            </article>
+          </div>
+          <p id="compatibility-feedback" class="quiz-feedback"></p>
+          <p id="compatibility-result" class="quiz-result"></p>
+        </div>
+      </section>
+    </main>
+
+    <div id="secret-modal" class="modal" role="dialog" aria-modal="true">
+      <div class="modal-content">
+        <button id="modal-close" class="modal-close" aria-label="Close">
+          Close
+        </button>
+        <div id="secret-hearts" class="secret-hearts" aria-hidden="true"></div>
+        <h2>Secret unlocked</h2>
+        <p class="modal-lead">
+          If you found this page you officially unlocked the secret part of the
+          internet.
+        </p>
+        <p class="modal-sub">This page exists because someone special exists.</p>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <p>Built with curiosity and a little bit of courage.</p>
+      <p class="signature">From: Kelvin</p>
+      <button id="secret-heart" class="secret-heart" aria-label="Secret">
+        <img src="images/logo-2.jpg" alt="" />
+      </button>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
+
